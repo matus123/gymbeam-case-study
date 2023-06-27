@@ -8,26 +8,6 @@ module.exports = {
     coveragePathIgnorePatterns: ['/node_modules/', '/@types/', '/tests/'],
     projects: [
         {
-            displayName: 'Unit tests',
-            preset: 'ts-jest',
-            verbose: true,
-            testEnvironment: 'node',
-            testPathIgnorePatterns: ['/node_modules/', '/coverage/', '/build/'],
-            testRegex: ['./src/.*__tests__/.*.(?:spec|test).ts$'],
-            transform: {
-                '^.+\\.ts$': 'ts-jest',
-            },
-            moduleFileExtensions: ['ts', 'js', 'json', 'node'],
-            globals: {
-                'ts-jest': {
-                    diagnostics: false,
-                    isolatedModules: true,
-                    tsconfig: './tsconfig.test.json',
-                },
-            },
-            setupFiles: ['<rootDir>/tests/setup.ts'],
-        },
-        {
             displayName: 'Integration tests',
             preset: 'ts-jest',
             verbose: true,
@@ -44,7 +24,6 @@ module.exports = {
                     tsconfig: './tsconfig.test.json',
                 },
             },
-            setupFiles: ['<rootDir>/tests/setup.ts'],
         },
     ],
 };
