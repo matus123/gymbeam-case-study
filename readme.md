@@ -27,3 +27,10 @@ curl --location 'localhost:3000/optimize-path' \
     "products": ["product-1", "product-2", "product-3"]
 }'
 ```
+
+# Improvements
+## Code
+- Add more tests
+- Better pathfinding implementation
+    - use extensive graph search algorithm
+    - current algorithm is a simple greedy algorithm
