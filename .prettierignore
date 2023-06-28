@@ -4,3 +4,14 @@ coverage
 dist
 build
 tests/fixtures/
+.devcontainer
+.github
+.vscode
+.prettierrc
+nest-cli.json
+package.json
+tsconfig.build.json
+tsconfig.json
+tsconfig.base.json
+readme.md
+tsconfig.test.json

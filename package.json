@@ -7,6 +7,8 @@
         "dev": "ts-node -T --project tsconfig.json --files src/main.ts",
         "build": "nest build",
         "start": "nest start",
+        "prettier": "prettier . --check",
+        "lint": "eslint",
         "test:all": "node --max-old-space-size=3584 --expose-gc ./node_modules/.bin/jest --runInBand --logHeapUsage --forceExit -c jest.config.js"
     },
     "dependencies": {
